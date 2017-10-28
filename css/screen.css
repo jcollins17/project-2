@@ -22,7 +22,7 @@ html {
   background-color: #b4d455;
 }
 #navigation {
-  position: abolute;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -49,12 +49,12 @@ html {
 }
 
 body{
-  padding-top:  22px;
-  padding-right:  22px;
-  padding-left:  22px;
+  padding-top:  1.750em;
+  padding-right:  1.375em;
+  padding-left:  1.375em;
 }
 h1,h2,h3,h4,h5,h6,p {
-  padding-bottom: 22px;
+  padding-bottom: 1.375em;
   padding-bottom: 1.222em;
 }
 h1 {
