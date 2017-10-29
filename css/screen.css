@@ -17,9 +17,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
+  font-family:"Arial", Arial, sans-serif;
   font-size: 1.125em;
   line-height: 1.222em;
   background-color: #b4d455;
+
 }
 #navigation {
   position: absolute;
@@ -29,15 +31,17 @@ html {
   background color: cyan;
 }
 #navigation li {
+  text-decoration:none;
   float: left;
   width: 33.33333333%;
   background color: green;
 }
 #navigation a {
   display: block;
-  text-align: center;
   color: black;
   background-color: #708729;
+  text-decoration:none;
+  text-align:center;
   width: 100%;
   padding-top: 0.611em;
   padding-bottom: 0.611em;
@@ -48,12 +52,32 @@ html {
   color: #DFFF80;
 }
 
-body{
-  padding-top:  1.750em;
-  padding-right:  1.375em;
-  padding-left:  1.375em;
+#spec-list{
+  text-align: left;
+  margin-left:auto;
+  margin-right:auto;
 }
-h1,h2,h3,h4,h5,h6,p {
+.resume-list{
+}
+.body-title{
+  text-align: center;
+}
+.list-title{
+  text-align: center;
+}
+.center-image{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+body{
+  padding-top:  3.175em;
+  padding-right:  1.222em;
+  padding-left:  4.175em;
+  transform: rotate(0.1deg);/* im evil aren't i?*/
+}
+h4,h5,h6,p {
   padding-bottom: 1.375em;
   padding-bottom: 1.222em;
 }
@@ -69,12 +93,12 @@ h2 {
 }
 h3 {
   font-weight: bold;
+  padding-bottom: 0.688em;
 }
 li {
-  padding-bottom: 11px;
+  padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
 }
 ol,ul {
-  padding-padding: 11px;
 }
 
 /* Responsive Media */
@@ -84,31 +108,3 @@ audio {
   display: block;
   max-width: 100%;
 }
-
-/* Layout Styles */
-/*
-  Hint: these tend to be
-  1. IDs; but also classes, sometimes
-  2. concerned with layout and spatial
-     relationships
-*/
-
-
-/* Modular Styles */
-/*
-  Repeating style patterns.
-  Hint: these tend to be:
-  1. classes and relationship selectors
-  2. concerned with adjustments to base styles,
-      spacing, color, etc. etc.
-*/
-
-/* State Styles */
-/*
-  States of the browser and user access
-  conditions.
-  Hint: these tend to be:
-  1. Driven by media queries
-  2. Influenced by JavaScript
-  3. Organized by Base, Layout, Module, State
-*/
