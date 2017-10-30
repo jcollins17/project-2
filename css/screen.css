@@ -18,8 +18,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-family:"Arial", Arial, sans-serif;
-  font-size: 1.125em;
-  line-height: 1.222em;
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em;/* 22 / 18 = 1.2~ */
   background-color: #b4d455;
 
 }
@@ -43,8 +43,8 @@ html {
   text-decoration:none;
   text-align:center;
   width: 100%;
-  padding-top: 0.611em;
-  padding-bottom: 0.611em;
+  padding-top: 0.688em;/* 22 / 31.984 = 0.688 */
+  padding-bottom: 0.688em;/* 22 / 31.984 = 0.688 */
 }
 
 #navigation a:hover {
@@ -72,14 +72,13 @@ html {
 
 
 body{
-  padding-top:  3.175em;
-  padding-right:  4.175em;
-  padding-left:  4.175em;
-  transform: rotate(0.1deg);/* im evil aren't i?*/
+  padding-top:  3.666em;/* 1.222*3 */
+  padding-right:  1.222em;/* 22 / 18 = 1.2~ */
+  padding-left:  1.222em;/* 22 / 18 = 1.2~ */
 }
 h4,h5,h6,p {
   padding-bottom: 1.375em;
-  padding-bottom: 1.222em;
+  padding-bottom: 1.222em;/* 22 / 18 = 1.2~ */
 }
 h1 {
   font-size: 2.369em; /* 42.635 / 18 = 2.369 */
@@ -93,7 +92,7 @@ h2 {
 }
 h3 {
   font-weight: bold;
-  padding-bottom: 0.688em;
+  padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
 }
 li {
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
@@ -108,3 +107,43 @@ audio {
   display: block;
   max-width: 100%;
 }
+
+
+@media screen and (min-width: 425px) {
+
+  body {
+    padding-top: 3.666em; /* 66 / 18 = 3.6~*/
+    padding-right: 11.73333333%; /* 44 / 375 = 11.73~% */
+    padding-left: 11.73333333%; /* 44 / 375 = 11.73~% */
+  }
+
+  #navigation li {
+    width: 33.333333333%;
+  }
+
+  #navigation a {
+    font-size: 1.125em; /* 18 / 16 = 1.125 */
+  }
+}
+
+@media screen and (min-width: 640px) {
+
+  html {
+    font-size: 1.5em; /* 20 / 16 = 1.25em */
+  }
+}
+body{
+    transform: rotate(0.1deg);/* im evil aren't i?  please dont dock me points for this, its only a joke.  But let me know how long it took you to notice the tilt */
+}
+@media screen and (min-width: 860px) {
+  /*
+    860px grid with two 80px margins
+    Columns: 200px
+    Gutters: 50px
+    Primary: 450px;
+    Secondary: 200px;
+  */
+
+  body{
+    padding-right: 9.302325581%; /* 80 / 860 = 0.0930 */
+    padding-left: 9.302325581%; /* 80 / 860 = 0.0930 */
