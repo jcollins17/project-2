@@ -17,11 +17,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 /* site is designed with a Major Third modular scale*/
 html {
-  font-family:"Arial", Arial, sans-serif;
+  font-family: Arial, Arial, sans-serif;
   font-size: 1.125em; /*18/16=1.125*/
   line-height: 1.25em;/*22.5/18=1.25*/
   background-color: #b4d455;
-
 }
 #navigation {
   position: absolute;
@@ -29,8 +28,11 @@ html {
   top: 0;
   left: 0;
 }
+li {
+  padding-bottom: 0.512em; /*22.5/43.945=0.512*/
+}
 #navigation li {
-  text-decoration:none;
+  text-decoration: none;
   float: left;
   width: 33.33333333%;
   background color: green;
@@ -40,43 +42,38 @@ html {
   display: block;
   color: black;
   background-color: #708729;
-  text-decoration:none;
-  text-align:center;
+  text-decoration: none;
+  text-align: center;
   width: 100%;
   padding-top: 0.611em;/*11/18=0.611*/
   padding-bottom: 0.611em;/*11/18=0.611*/
 }
-
 #navigation a:hover {
   background-color: #485422;
   color: #DFFF80;
 }
-
-#spec-list{
+#spec-list {
   text-align: left;
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-.resume-list{
-}
-.body-title{
+.body-title {
   text-align: center;
 }
-.list-title{
+.list-title {
   text-align: center;
 }
-.center-image{
-  margin-left:auto;
-  margin-right:auto;
+.center-image {
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
-body{
-  padding-top:  3.75em;/*1.25*3=3.75*/
-  padding-right:  1.25em;/*22.5/18=1.25*/
-  padding-left:  1.25em;/*22.5/18=1.25*/
+body {
+  padding-top: 3.75em;/*1.25*3=3.75*/
+  padding-right: 1.25em;/*22.5/18=1.25*/
+  padding-left: 1.25em;/*22.5/18=1.25*/
+  transform: rotate(0.1deg);/* im evil aren't i?  please dont dock me points for this, its only a joke.  But let me know how long it took you to notice the tilt */
 }
-h4,h5,h6,p,figcaption {
+h4, h5, h6, p, figcaption {
   padding-bottom: 1.25em;/*22.5/18=1.25*/
 }
 h1 {
@@ -87,14 +84,11 @@ h1 {
 h2 {
   font-size: 1.777em; /*35.156/18=1.953*/
   line-height: 0.938em; /*33/35.156=0.938*/
-  padding-bottom: 0.640em; /*22/35.156=0.640*/
+  padding-bottom: 0.64em; /*22/35.156=0.640*/
 }
 h3 {
   font-size: 1.563em; /*28.125/18=1.563*/
   font-weight: bold;
-  padding-bottom: 0.512em; /*22.5/43.945=0.512*/
-}
-li {
   padding-bottom: 0.512em; /*22.5/43.945=0.512*/
 }
 /* Responsive Media */
@@ -104,50 +98,37 @@ audio {
   display: block;
   max-width: 100%;
 }
-@media screen and (max-width: 6.250em) {
+@media screen and (max-width: 6.25em) {
   body::before {
-    content:"wow you have a very tiny screen.  you should probably look at this website on a larger screen to properly see it!"
+    content: "wow you have a very tiny screen.  you should probably look at this website on a larger screen to properly see it!";
   }
 }
-
 @media screen and (min-width: 26.5625em) {
-/*425px grid with two 20px margins*/
+  /*425px grid with two 20px margins*/
   body {
     padding-top: 3.75em; /*67.5/18=3.75*/
-    padding-right:  4.705%;/*22.5/18=4.705%*/
-    padding-left:  4.705%;/*22.5/18=4.705%*/
+    padding-right: 4.705%;/*22.5/18=4.705%*/
+    padding-left: 4.705%;/*22.5/18=4.705%*/
   }
-/*
-  #navigation li {
-    width: 33.333333333%;
-  }
-
-  #navigation a {
-    font-size: 1.25em;
-  }
-}*/
-
+}
 @media screen and (min-width: 40em) {
   /*
     640px grid with two 40px margins
   */
   html {
-    font-size: 1.25em; /* 20 / 16 = 1.25em */
+    font-size: 1.25em; /*20/16=1.25em*/
   }
-  body{
-    padding-right: 6.25%; /* 40 / 640 = 0.0625 */
-    padding-left: 6.25%; /* 40 / 640 = 0.0625 */
+  body {
+    padding-right: 6.25%; /*40/640=0.0625*/
+    padding-left: 6.25%; /*40/640=0.0625*/
   }
-
-}
-body{
-    transform: rotate(0.1deg);/* im evil aren't i?  please dont dock me points for this, its only a joke.  But let me know how long it took you to notice the tilt */
 }
 @media screen and (min-width: 45em) {
   /*
     720px grid with two 80px margins
   */
-  body{
+  body {
     padding-right: 11.111%; /*80/720=11.111%*/
     padding-left: 11.111%; /*80/720=11.111%*/
   }
+}
