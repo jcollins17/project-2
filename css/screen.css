@@ -131,8 +131,8 @@ audio {
   }
   .cssgrid #content{
     display: grid;
-    /*grid-template-columns: repeat(2, 1fr);*/
-    grid-column-gap: 1.111%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 11.111%;
     width:auto;
   }
   .cssgrid #primary{
