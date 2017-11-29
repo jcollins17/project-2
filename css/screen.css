@@ -70,7 +70,6 @@ body {
   padding-top: 3.75em;/*1.25*3=3.75*/
   padding-right: 1.25em;/*22.5/18=1.25*/
   padding-left: 1.25em;/*22.5/18=1.25*/
-  transform: rotate(0.1deg);/* im evil aren't i?  please dont dock me points for this, its only a joke.  But let me know how long it took you to notice the tilt */
 }
 h4, h5, h6, p, figcaption {
   padding-bottom: 1.25em;/*22.5/18=1.25*/
