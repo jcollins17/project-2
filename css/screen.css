@@ -129,4 +129,16 @@ audio {
     padding-right: 11.111%; /*80/720=11.111%*/
     padding-left: 11.111%; /*80/720=11.111%*/
   }
+  .cssgrid #content{
+    display: grid;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-column-gap: 1.111%;
+    width:auto;
+  }
+  .cssgrid #primary{
+    grid-column:1;
+  }
+  .cssgrid #supporting{
+    grid-column:2;
+  }
 }
