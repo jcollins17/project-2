@@ -117,19 +117,6 @@ audio {
   max-width: 100%;
 }
 
-@keyframes fadeIn{
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-.fade-in {
-  animation: fadeIn ease 2s;
-}
-
 
 @media screen and (max-width: 6.25em) {
   body::before {
@@ -182,7 +169,7 @@ audio {
     bottom:0;
   }
 }
-@media screen and (min-height: 60em)  and (min-width:58.750em){{
+@media screen and (min-height: 60em)  and (min-width:58.750em){
   /*
     2560x1440px grid
   */
