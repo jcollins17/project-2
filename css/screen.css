@@ -56,6 +56,11 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+#slideshow{
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom:  0.611em;
+}
 .footer{
   display: block;
   color: black;
